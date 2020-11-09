@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="develop/bulma/css/bulma.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body class="container">
@@ -27,18 +28,14 @@
             <div class="dropdown is-hoverable">
                 <div class="dropdown-trigger">
                   <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                    <span>Hover me</span>
+                    <span id ="hover-me">Hover me</span>
                     <span class="icon is-small">
                       <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </span>
                   </button>
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                  <div class="dropdown-content">
-                    <div id="searchItems" class="dropdown-item">
-                      <p>Item 1</p>
-                      <p>Item 2</p>
-                    </div>
+                  <div class="dropdown-content" id="searchItems">
                   </div>
                 </div>
             </div>
@@ -51,6 +48,6 @@
         
 
     </div>
-    
+    <script src = "javascriptforselect.js"></script>
 </body>
 </html>

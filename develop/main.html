@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bulma/css/bulma.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body class="container">
@@ -25,8 +26,6 @@
     <h2 id="currentPlace">Current place</h2>
 
     <div id="body" class="columns is-full pt-6">
-
-        
 
        <div id="covidNews" class="column card mx-5" >
         <header class="card-header">
@@ -49,12 +48,20 @@
             </header>
             <div class="card-content">
               <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                  <p>Confirmed:</p>
+                  <p id="confirmed"></p>
+                  <p>Deaths:</p>
+                  <p id="deaths"></p>
+                  <p>Recoverd:</p>
+                  <p id="recovered"></p>
+                  <p>Active:</p>
+                  <p id="active"></p>
               </div>
             </div>
        </div>
 
     </div>
+    <script src = "covid.js"></script>
     
 </body>
 </html>
