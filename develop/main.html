@@ -1,67 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <link rel="stylesheet" href="bulma/css/bulma.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-</head>
-<body class="container">
-
-    
-    
-    <div id="header" class="columns p-3 has-background-primary ">
-        <div class="column">
-
-            <h1 class="title p-3 is has-text-centered">Placeholder Title </h1>
-            <h2 class="subtitle has-text-centered">Placeholder Title 2 </h2>
-
-        </div>
-        
-
+  </head>
+  <body class="container">
+    <div id="header" class="columns p-3 has-background-primary">
+      <div class="column">
+        <h1 class="title p-3 is has-text-centered">Placeholder Title</h1>
+        <h2 class="subtitle has-text-centered">Placeholder Title 2</h2>
+      </div>
     </div>
 
     <h2 id="currentPlace">Current place</h2>
 
     <div id="body" class="columns is-full pt-6">
-
-       <div id="covidNews" class="column card mx-5" >
+      <div id="covidNews" class="column card mx-5">
         <header class="card-header">
-            <p class="card-header-title">
-              News
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-            </div>
+          <p class="card-header-title">News</p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris.
           </div>
-       </div>
+        </div>
+      </div>
 
-       <div id="covidSituation" class="column card mx-5" >
-            <header class="card-header">
-              <p class="card-header-title">
-                Covid Situation
-              </p>
-            </header>
-            <div class="card-content">
-              <div class="content">
-                  <p>Confirmed:</p>
-                  <p id="confirmed"></p>
-                  <p>Deaths:</p>
-                  <p id="deaths"></p>
-                  <p>Recoverd:</p>
-                  <p id="recovered"></p>
-                  <p>Active:</p>
-                  <p id="active"></p>
-              </div>
-            </div>
-       </div>
-
+      <div id="covidSituation" class="column card mx-5">
+        <header class="card-header">
+          <p class="card-header-title">Covid Situation</p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <p>Confirmed:</p>
+            <p id="confirmed"></p>
+            <p>Deaths:</p>
+            <p id="deaths"></p>
+            <p>Recoverd:</p>
+            <p id="recovered"></p>
+            <p>Active:</p>
+            <p id="active"></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src = "covid.js"></script>
-    
-</body>
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./develop/javascript.js"></script>
+
+    <script src="covid.js"></script>
+  </body>
 </html>
