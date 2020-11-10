@@ -59,4 +59,7 @@ a:hover{
     height: 50vh;
 }
 
+#search,#searchCountry{
+    width: 350px;
+}
 
