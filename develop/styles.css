@@ -14,3 +14,39 @@ a:hover{
     scrollbar-width: thin;          
     scrollbar-color: blue orange;   
 }
+
+#body{
+
+    background-color: black;
+    background-image:url('1.jpg');
+    height: 100vh;
+    margin: 0%;
+    
+
+   
+}
+
+#header
+{
+   
+    width: 100vw;
+    margin-bottom: 0%;
+    background-color: black;
+    background-image:url('HealthcareHeader2.jpg');
+    background-position:right bottom;
+
+}
+
+.health-text
+{
+    color: rgb(9, 111, 136);
+}
+
+.health-bg
+{
+    background-color:  rgb(9, 111, 136);;
+}
+
+
+
+
