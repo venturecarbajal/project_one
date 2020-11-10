@@ -16,3 +16,24 @@ $.ajax({url: "https://api.covid19api.com/live/country/"+ localStorage.getItem("C
        $("#recovered").text(lastData.Recovered)
     }
 )
+
+//get country info
+
+var countryn = localStorage.getItem("Country")
+var countryInfo = "https://restcountries.eu/rest/v2/name/"+ countryn;
+
+$.ajax({
+
+    url:countryInfo,
+    method:"GET"
+
+}).then(function(country){
+
+   
+    var population = Intl.NumberFormat().format(country[0].population);
+   
+
+    $("#flag").attr("src",country[0].flag);
+    $("#population").text("Population: " + population);
+
+});
