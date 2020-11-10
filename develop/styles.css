@@ -1,0 +1,16 @@
+img{
+    width: 300px;
+}
+
+a:hover{
+    color: aqua;
+}
+
+#covidNews{
+
+   
+    height: auto;
+    overflow: auto;
+    scrollbar-width: thin;          
+    scrollbar-color: blue orange;   
+}
