@@ -1,0 +1,65 @@
+img{
+    width: 300px;
+}
+
+a:hover{
+    color: aqua;
+}
+
+#covidNews{
+
+   
+    height: auto;
+    overflow: auto;
+    scrollbar-width: thin;          
+    scrollbar-color: blue orange;   
+}
+
+#body{
+
+    background-color: black;
+    background-image:url('1.jpg');
+    height: 100vh;
+    margin: 0%;
+    
+
+   
+}
+
+#header
+{
+   
+    width: 100vw;
+    margin-bottom: 0%;
+    background-color: black;
+    background-image:url('HealthcareHeader2.jpg');
+    background-position:right bottom;
+
+}
+
+.health-text
+{
+    color: rgb(9, 111, 136);
+}
+
+.health-bg
+{
+    background-color:  rgb(9, 111, 136);;
+}
+
+#flag
+{
+    width: 150px;
+}
+
+#dropdown-menu4{
+    
+    overflow: scroll;
+    scrollbar-width: thin;   
+    height: 50vh;
+}
+
+#search,#searchCountry{
+    width: 350px;
+}
+
