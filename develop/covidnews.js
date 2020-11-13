@@ -25,7 +25,7 @@ $.ajax({
     var secondaryDiv = $('<div>');
     //create <img> element for picture
     var image = $('<img>');
-
+    //
     // create a element
     var aEl = $('<p>');
     //add classes
