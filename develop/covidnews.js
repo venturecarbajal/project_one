@@ -64,7 +64,7 @@ $.ajax({
     //append <b> to <a>
     aEl.append(bold);
     //append <a> to <h1>
-    headline.append(aEl);
+    titleLink.append(aEl);
     //append <h1> to main <div>
     mainDiv.append(headline);
     //append second <div> to main <div>
