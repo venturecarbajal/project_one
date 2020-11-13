@@ -8,20 +8,33 @@ date = date.toISOString()
 
 $.ajax({url: "https://api.covid19api.com/live/country/"+ localStorage.getItem("Country")}).then(
     function(response){
-       lastData = response[response.length -1]
-       console.log(lastData)
+        if(response.length > 0){
+            lastData = response[response.length -1]
+            console.log(lastData)
+     
+            //en-IN formatting for numbers
+     
+            var ActiveFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Active);
+            var ConfirmedFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Confirmed);
+            var DeathsFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Deaths);
+            var RecoveredFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Recovered);
+     
+            $("#active").text(ActiveFormatted);
+            $("#confirmed").text(ConfirmedFormatted);
+            $("#deaths").text(DeathsFormatted);
+            $("#recovered").text(RecoveredFormatted);
+        }
+        else{
+            var noInfoText = "0"
 
-       //en-IN formatting for numbers
+            $("#active").text(noInfoText);
+            $("#confirmed").text(noInfoText);
+            $("#deaths").text(noInfoText);
+            $("#recovered").text(noInfoText);
 
-       var ActiveFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Active);
-       var ConfirmedFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Confirmed);
-       var DeathsFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Deaths);
-       var RecoveredFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Recovered);
 
-       $("#active").text(ActiveFormatted);
-       $("#confirmed").text(ConfirmedFormatted);
-       $("#deaths").text(DeathsFormatted);
-       $("#recovered").text(RecoveredFormatted);
+        }
+
     }
 )
 
