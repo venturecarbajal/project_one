@@ -1,10 +1,10 @@
-var country = localStorage.getItem('Country');
+var country = localStorage.getItem('Country') + '+' + 'coronavirus';
 
 var queryURL =
   'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
   country +
   '&api-key=R1a31F4tBjCUaM2ho8GtIFsrSdtXt30M';
-
+console.log(queryURL);
 $.ajax({
   url: queryURL,
   method: 'GET',
@@ -42,6 +42,8 @@ $.ajax({
     titleLink.addClass('has-text-justified');
     //add content from api
     var test = response.response.docs[i];
+    console.log(test);
+    console.log(test.multimedia);
     //add title to <b> element
     bold.text(test.headline.main);
     //add summary to <p> element
@@ -50,8 +52,10 @@ $.ajax({
     titleLink.attr('href', test.web_url);
     //set attribute src to img element to the image preview from the api
     var imageLink = 'https://nytimes.com/';
-
-    image.attr('src', imageLink + test.multimedia[0].url);
+    // protecting against undefined values
+    if (test?.multimedia[0]?.url) {
+      image.attr('src', imageLink + test.multimedia[0].url);
+    }
     //append elements
     //append <img> to second div
     secondaryDiv.append(image);
@@ -66,6 +70,7 @@ $.ajax({
     //append second <div> to main <div>
     mainDiv.append(secondaryDiv);
     $('#news-card').append(mainDiv);
+    console.log(mainDiv);
   }
   /*
 <div class="content">

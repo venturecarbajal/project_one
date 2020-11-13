@@ -2,12 +2,13 @@
 
 Summary:
 
-We aim to build a web application that tracks Covid infection rates along with news information in a specific country/state/city. 
+We aim to build a web application that tracks Covid infection rates along with news information in a specific country/state/city.
 
 Potential APIs:
-- Covid tracker API (https://covid19api.com/) 
 
-- News API () 
+- Covid tracker API (https://covid19api.com/)
+
+- News API (https://api.nytimes.com/svc/search/v2/articlesearch.json?q=)
 
 User Story:
 
@@ -19,16 +20,10 @@ With the benefit of being up to date on the latest covid statistics and news.
 
 Application features/todo:
 Show # of cases in a specific region
-Search news in a specific region
-Search by state
+Search news in a specific country
 Create wireframes and design
 
 Mockups:
 https://whimsical.com/mockups-project1-bootcamp-F6on7zMKGwz9wqYsHTKBZC
 
 Webpage:
-
-
-
-
-
