@@ -18,17 +18,16 @@ $.ajax({
     //create h element for title
     var headline = $('<h1>');
     //create a element for title link
-    var titleLink = $('<p>');
+    var titleLink = $('<a>');
     //create b element for bold title
     var bold = $('<b>');
     //create a second div element for article content
     var secondaryDiv = $('<div>');
     //create <img> element for picture
     var image = $('<img>');
-    //create <p> element for article summary
-    var articleSummary = $('<p>');
+
     // create a element
-    var aEl = $('<a>');
+    var aEl = $('<p>');
     //add classes
     //add class "content" to main <div>
     mainDiv.addClass('content');
@@ -59,8 +58,9 @@ $.ajax({
     //append elements
     //append <img> to second div
     secondaryDiv.append(image);
-    //append <p> to second div
-    secondaryDiv.append(titleLink);
+    // append <a> to h1
+    headline.append(titleLink);
+
     //append <b> to <a>
     aEl.append(bold);
     //append <a> to <h1>
