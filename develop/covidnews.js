@@ -49,7 +49,7 @@ $.ajax({
     //add summary to <p> element
     secondaryDiv.text(test.snippet);
     //set href attribute to <a> element with the link to the article
-    titleLink.attr('href', test.web_url);
+    
     //set attribute src to img element to the image preview from the api
     var imageLink = 'https://nytimes.com/';
     // protecting against undefined values
@@ -60,6 +60,9 @@ $.ajax({
     //append <img> to second div
     secondaryDiv.append(image);
     //append <p> to second div
+    titleLink.attr('href', test.web_url);
+    headline.append(titleLink);
+    mainDiv.append(headline);
     secondaryDiv.append(titleLink);
     //append <b> to <a>
     aEl.append(bold);
@@ -69,6 +72,7 @@ $.ajax({
     mainDiv.append(headline);
     //append second <div> to main <div>
     mainDiv.append(secondaryDiv);
+    mainDiv.addClass("p-2");
     $('#news-card').append(mainDiv);
     console.log(mainDiv);
   }

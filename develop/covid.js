@@ -13,10 +13,10 @@ $.ajax({url: "https://api.covid19api.com/live/country/"+ localStorage.getItem("C
 
        //en-IN formatting for numbers
 
-       var ActiveFormatted = Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(lastData.Active);
-       var ConfirmedFormatted = Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(lastData.Confirmed);
-       var DeathsFormatted = Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(lastData.Deaths);
-       var RecoveredFormatted = Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(lastData.Recovered);
+       var ActiveFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Active);
+       var ConfirmedFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Confirmed);
+       var DeathsFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Deaths);
+       var RecoveredFormatted = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(lastData.Recovered);
 
        $("#active").text(ActiveFormatted);
        $("#confirmed").text(ConfirmedFormatted);
@@ -27,8 +27,8 @@ $.ajax({url: "https://api.covid19api.com/live/country/"+ localStorage.getItem("C
 
 //get country info
 
-var countryn = localStorage.getItem("Country")
-var countryInfo = "https://restcountries.eu/rest/v2/name/"+ countryn;
+var countryCode = localStorage.getItem("countryCode")
+var countryInfo = "https://restcountries.eu/rest/v2/alpha?codes="+ countryCode;
 
 $.ajax({
 
@@ -38,7 +38,7 @@ $.ajax({
 }).then(function(country){
 
     
-    var population = Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(country[0].population);
+    var population = Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(country[0].population);
    
 
     $("#flag").attr("src",country[0].flag);
