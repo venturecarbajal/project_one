@@ -72,17 +72,4 @@ $.ajax({
     $('#news-card').append(mainDiv);
     console.log(mainDiv);
   }
-  /*
-<div class="content">
-<h1><a class="has-text-dark" href="href=wikipedia.com"><b>Article Title</b></a></h1>
-    <div class="card level p-2">
-        <img class="is-justify-content-left" src="Preview.jpg" alt="art-img">
-        <p class="has-text-justified">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, rem! Molestiae enim deleniti in maxime incidunt veritatis praesentium, expedita commodi consectetur perferendis reprehenderit provident impedit? Est animi voluptas natus unde.</p>
-    </div>
-</div>
-*/
 });
-
-// $('#searchCountry').on('click', function(){
-//     var selectedCountry
-// })
