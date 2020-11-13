@@ -45,5 +45,5 @@ $("#searchButton").on("click",function(){
     localStorage.setItem("CountryName", selectedCountryName)
     localStorage.setItem("Country",selectedCountry)
     localStorage.setItem("countryCode",selectedCountryCode)
-    window.location = "develop/main.html"
+    window.location = "./main.html"
 })
