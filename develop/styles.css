@@ -9,18 +9,23 @@ a:hover{
 #covidNews{
 
    
-    height: auto;
+    height: 50vh;
     overflow: auto;
     scrollbar-width: thin;          
     scrollbar-color: blue orange;   
+    
 }
 
 #body{
 
     background-color: black;
     background-image:url('1.jpg');
-    height: 100vh;
+   
     margin: 0%;
+    height: 84vh;
+    margin: 0%;
+   
+    
     
 
    
@@ -34,6 +39,8 @@ a:hover{
     background-color: black;
     background-image:url('HealthcareHeader2.jpg');
     background-position:right bottom;
+    height: 15vh;
+    margin: 0;
 
 }
 
@@ -61,5 +68,12 @@ a:hover{
 
 #search,#searchCountry{
     width: 350px;
+}
+
+html{
+
+    overflow: hidden;
+    margin: 0%;
+    
 }
 
