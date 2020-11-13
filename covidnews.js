@@ -48,7 +48,7 @@ $.ajax({
     //add summary to <p> element
     secondaryDiv.text(test.snippet);
     //set href attribute to <a> element with the link to the article
-    
+    titleLink.attr('href', test.web_url);
     //set attribute src to img element to the image preview from the api
     var imageLink = 'https://nytimes.com/';
     // protecting against undefined values
@@ -58,16 +58,8 @@ $.ajax({
     //append elements
     //append <img> to second div
     secondaryDiv.append(image);
-
-    //append <p> to second div
-    titleLink.attr('href', test.web_url);
+    // append <a> to h1
     headline.append(titleLink);
-    mainDiv.append(headline);
-    secondaryDiv.append(titleLink);
-
- 
-
-
     //append <b> to <a>
     aEl.append(bold);
     //append <a> to <h1>
