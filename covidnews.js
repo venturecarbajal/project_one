@@ -38,7 +38,7 @@ $.ajax({
     //add class "is-justify-content-left" to <img> element
     image.addClass('is-justify-content-left');
     //add class "has-text-justified" to <p> element
-    titleLink.addClass('has-text-justified');
+    titleLink.addClass('has-text-justified is-size-6-mobile is-size-5-tablet');
     //add content from api
     var test = response.response.docs[i];
     console.log(test);
