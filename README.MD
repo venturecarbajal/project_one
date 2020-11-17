@@ -8,7 +8,7 @@ Potential APIs:
 
 - Covid tracker API (https://covid19api.com/)
 
-- News API (https://api.nytimes.com/svc/search/v2/articlesearch.json?q=)
+- News API (https://api.nytimes.com/)
 
 User Story:
 
@@ -26,4 +26,10 @@ Create wireframes and design
 Mockups:
 https://whimsical.com/mockups-project1-bootcamp-F6on7zMKGwz9wqYsHTKBZC
 
-Webpage:
+Webpage: https://venturecarbajal.github.io/project_one/
+
+Main Page
+![homepage](./homepage.PNG)
+
+Covid News & Stat Page
+![stat/news](./stat_news_page.PNG)
